@@ -1,13 +1,15 @@
 # Cloud Computing notes
 
-#### What is Cloud Computing?
+### What is Cloud Computing?
 
 The delivery of computing services over the internet e.g. servers, storage, databases. Often has a graphical interface and a pay-as-you-go service.
 
-#### How do we know if something is in the Cloud (on-prem vs the cloud)
+### How do we know if something is in the Cloud (on-prem vs the cloud)
 Cloud software is stored and managed on the provider's servers, and accessed through a web browser or other interface. On-premise software is installed and runs on a company's own hardware infrastructure, and is hosted locally.
 
-#### What are some popular cloud computing services and how are they used?
+If it is build-upon services (e.g per user) then most likely it is a cloud service.
+
+### What are some popular cloud computing services and how are they used?
 - __Amazon Web Services (AWS)__
   - Hosting web applications
   - Storing and processing data
@@ -20,8 +22,10 @@ Cloud software is stored and managed on the provider's servers, and accessed thr
   - Data storage
   - Data analytics
   - Machine learning
+- __One Drive / Google Drive__
+- __Adobe Suite__
 
-#### Explain the four main cloud deployment models
+### Explain the four main cloud deployment models
 1. __Public__
    - Cloud services are owned and operated by a third-party cloud provider and made available to the general public. These services are delivered over the internet, and multiple customers share the same infrastructure 
 2. __Private__
@@ -34,7 +38,7 @@ Cloud software is stored and managed on the provider's servers, and accessed thr
    - Combination of public and private clouds which allows data and applications to be shared between them giving organisations greater flexibility to move workloads between clouds based on their specific needs
 
 
-#### Explain the three main types of cloud service
+### Explain the three main types of cloud service
 1. __Infrastructure as a Service (IaaS)__
    - Provides virtualised computing resources over the internet, such as virtual machines and storage
    - Basic building blocks for cloud IT
@@ -49,7 +53,7 @@ Cloud software is stored and managed on the provider's servers, and accessed thr
    - A complete product that is run and managed by the service provider
    - Examples: Google Workspace, Microsoft 365, Dropbox  
 
-#### What are some of the main advantages of the cloud?
+### What are some of the main advantages of the cloud?
 - __Cost__
   - Trade fixed expenses (e.g data centers) for variable expenses, and only pay for IT as you consume it. The expenses are lower than doing it yourself due to the economies of scale
 - __Agility__
@@ -65,7 +69,7 @@ Cloud software is stored and managed on the provider's servers, and accessed thr
   - Applications closer in proximity to end users to reduce latency and improve their experience
 
 
-#### What are some potential pitfalls/disadvantages of using the cloud?
+### What are some potential pitfalls/disadvantages of using the cloud?
 - __Downtime and Reliability__
   - Service outages are always a possibility and can occur for any reason due to cloud systems being internet-based
 - __Security__
@@ -76,14 +80,14 @@ Cloud software is stored and managed on the provider's servers, and accessed thr
 - __Vendor lock-in__
   - Over-reliance on a single CSP can be a problem if they make changes (e.g pricing) and may be expensive or tedious to change provider
 
-#### Have a look at marketshare? Who are the biggest Cloud providers?
+### Have a look at marketshare? Who are the biggest Cloud providers?
 1. __AWS__ (30% Q4 2024)
 2. __Microsoft Azure__ (21% Q4 2024)
 3. __GCP__ (12% Q4 2024)
 
     (https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/)
 
-#### Which Cloud Provider is best? What are the big three known for?
+### Which Cloud Provider is best? What are the big three known for?
 No single 'best' provider
 
 - __Amazon Web Services (AWS)__
@@ -100,7 +104,7 @@ No single 'best' provider
   - Kubernetes Expertise
   - Open Source Focus - many services built on open-source technologies
 
-#### What sorts of thing do you usually pay for when using the cloud?
+### What sorts of thing do you usually pay for when using the cloud?
 - __Compute Resources__
   - Virtual Machines
   - Serverless Computing - pay based on number of executions / times your functions run
@@ -119,7 +123,7 @@ No single 'best' provider
 - __Support Plans__
   - Technical Support - premium plans for 24/7 access to engineers, faster response times etc
 
-#### What are the four pillars of DevOps? How are they linked to cloud computing?
+### What are the four pillars of DevOps? How are they linked to cloud computing?
 1. __Collaboration__
    - Flexible, shared infrastructure supports collaboration between teams
    - Shared resources (e.g virtual machines, storage) that teams can access remotely supports collaboration across teams and locations
