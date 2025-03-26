@@ -2,7 +2,7 @@
 
 #### What is Cloud Computing?
 
-The delivery of computing services over the internet e.g. servers, storage, databases etc
+The delivery of computing services over the internet e.g. servers, storage, databases. Often has a graphical interface and a pay-as-you-go service.
 
 #### How do we know if something is in the Cloud (on-prem vs the cloud)
 Cloud software is stored and managed on the provider's servers, and accessed through a web browser or other interface. On-premise software is installed and runs on a company's own hardware infrastructure, and is hosted locally.
