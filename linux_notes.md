@@ -11,7 +11,7 @@ Linux is a clone of the Unix operating system.
 *Linux does not care about file extensions*  
 *Linux is case-sensitive*  
 
-### Helpful Commands
+## Helpful Commands
 #### Information Commands
 `uname` = gives system info  
 `pwd` = prints the current working directory  
@@ -54,7 +54,7 @@ Linux is a clone of the Unix operating system.
 `sudo apt upgrade -y` = installs the updated packages that have been downloaded. Not safe as can cause problems  
 `sudo su <name>` = logs in as a super user if given no name argument, or a different user if given a name  
   
-### Research
+## Research
 #### How can we set a variable in BASH?
 A variable can be set by assigning a value to its reference e.g. `STR="Hello World!"`
 
