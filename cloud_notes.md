@@ -1,7 +1,6 @@
 # Cloud Computing notes
 
 ### What is Cloud Computing?
-
 The delivery of computing services over the internet e.g. servers, storage, databases. Often has a graphical interface and a pay-as-you-go service.
 
 ### How do we know if something is in the Cloud (on-prem vs the cloud)
@@ -31,12 +30,17 @@ If it is build-upon services (e.g per user) then most likely it is a cloud servi
 2. __Private__
    - A cloud environment used exclusively by a single organisation and hosted either on-site at the organisation's data centre or by a third-party provider
    - Private cloud offers more control and customisation over the infrastructure 
-3. __Community__
+3. __Hybrid__
+   - Combination of public and private clouds which allows data and applications to be shared between them giving organisations greater flexibility to move workloads between clouds based on their specific needs
+4. __Multi Cloud__
+   - Using multiple cloud providers e.g Azure + GCP
+   - Prevents Vendor Lock-in, improves reliability and flexibility
+   - Extension of Public cloud
+
+(Another Example)
+- __Community__
    - Cloud environment that is shared by several organisations that have common concerns e.g security, compliance, regulatory requirements
    - Infrastructure is managed by either one of the organisations or a third-party provider and is commonly used by government agencies 
-4. __Hybrid__
-   - Combination of public and private clouds which allows data and applications to be shared between them giving organisations greater flexibility to move workloads between clouds based on their specific needs
-
 
 ### Explain the three main types of cloud service
 1. __Infrastructure as a Service (IaaS)__
@@ -45,7 +49,7 @@ If it is build-upon services (e.g per user) then most likely it is a cloud servi
    - Highest level of flexibility and management control over your resources
    - Examples: AWS, Microsoft Azure, Google Cloud
 2. __Platform as a Service (PaaS)__
-   - Offers a platform and environment to develop, test and deploy applications without the need to manage underlying infrastructure
+   - Offers a platform and environment to develop, test and deploy applications without the need to manage underlying infrastructure. Have to write your own code within the provided environment
    - Promotes efficiency by reducing worry about resource procurement, capacity planning, software maintenance etc
    - Examples: Google App Engine, Heroku
 3. __Software as a Service (SaaS)__
@@ -62,12 +66,11 @@ If it is build-upon services (e.g per user) then most likely it is a cloud servi
   - Can deploy technologies in a matter of minutes to get through the development lifecycle more quickly
 - __Elasticity__
   - No over-provision of resources up front to handle peak levels of activity, can just provision the amount you need
-  - Resources can be scaled up or down instantly to suit business needs
+  - Resources can be scaled vertically (up or down) or horizontally (in or out) instantly to suit business needs. Vertical scaling is an increase in compute power e.g a more powerful computer whereas horizontal scaling is adding a second computer
 - __Global scale__
   - Expand to new geographic regions and deploy globally in minutes due to infrastructure across the world.
   - Can deploy in multiple physical locations
   - Applications closer in proximity to end users to reduce latency and improve their experience
-
 
 ### What are some potential pitfalls/disadvantages of using the cloud?
 - __Downtime and Reliability__
@@ -85,7 +88,7 @@ If it is build-upon services (e.g per user) then most likely it is a cloud servi
 2. __Microsoft Azure__ (21% Q4 2024)
 3. __GCP__ (12% Q4 2024)
 
-    (https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/)
+    [Reference](https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/)
 
 ### Which Cloud Provider is best? What are the big three known for?
 No single 'best' provider
