@@ -45,6 +45,7 @@ Linux is a clone of the Unix operating system.
 `tail -<num> <filename>` = prints the number of lines from the bottom of the file  
 `nl <filename>` = prints the line numbers in the file  
 `cat <filename> | grep <word>` = prints the lines with the specified word 
+`scp <filename>` = secure copy for a file
 
 #### Installation Commands
 `apt install <package>` = will install the specified package if it has access to it  
