@@ -27,6 +27,7 @@ Linux is a clone of the Unix operating system.
 `ls -a` = prints all of the files, folders and hidden files and folders within the current directory  
 `echo` = prints the text of message on the screen  
 `exit` = removes you from root folder or exits virtual machine
+`sleep <num>` = puts the terminal to sleep for the specified amount of seconds (useful for waiting on information during a script as processes may happen too quickly)
 
 #### File Commands
 `curl <url> --output <filename>` = used for downloading files for data transfer in general  
@@ -53,13 +54,20 @@ Linux is a clone of the Unix operating system.
 (Commonly used when logging into a VM to verify it has access to the internet)  
 `sudo apt upgrade -y` = installs the updated packages that have been downloaded. Not safe as can cause problems  
 `sudo su <name>` = logs in as a super user if given no name argument, or a different user if given a name  
+
+#### Nginx Commands
+`sudo systemctl status nginx` = prints the status of the nginx web service  
+`sudo systemctl start nginx` = starts the nginx web service  
+`sudo systemctl stop nginx` = stops the nginx web service  
+`sudo systemctl restart nginx` = restarts the web service  
+`sudo systemctl enable nginx` = allows nginx to be started on startup
   
 ## Research
 #### How can we set a variable in BASH?
 A variable can be set by assigning a value to its reference e.g. `STR="Hello World!"`
 
 #### What are environment variables?
-Special variables often used to pass information between commands and subprocesses, or to control the shells behaviour. They contain information about your login session and stored for the system shell to use when executing commands.
+Special (global) variables often used to pass information between commands and subprocesses, or to control the shells behaviour. They contain information about your login session and stored for the system shell to use when executing commands.
 
 #### How can we set one?
 `export <variable-name>=value`
@@ -70,8 +78,10 @@ By setting them in your shell configuration file e.g. ~/.bashrc
 Navigate to __~/.bashrc__ before setting the variable using the __export__ keyword  
 `export <variable-name>=value`
 
+Need to start a new session or manually run the configuration file again for the environment variable to show up. This can be done by running `source .bashrc`.
+
 #### What is a process?
-An instance of a program that is currently being executed.
+An instance of a program that is currently being executed. Each process is given an ID, known as a PID. Only one process can run per core of the CPU, it will just quickly switch between multiple processes.
 
 #### How can we see running processes?
 You can view all running processes using the `ps` command, or `top` to get an ongoing, dynamic view of active processes
@@ -87,6 +97,9 @@ e.g. `<command> &`
 There are a few methods:
 1. Using `kill`
    - You can terminate the process by using this command with the Process ID (PID) e.g. `kill <PID>`
+   - Most gentle way of killing a process uses `kill -1 <PID>` as -1 is the SigKill flag for gently stopping the process
+   - To kill a process that has child processes, use `kill -15 <PID>`. This will kill the child processes before the parent process
+   - Most aggressive way of killing processes, use `kill -9 <PID>`. This will abruptly kill the process. __Do not use for sensitive processes__.
    - To find the PID, you can use ps, top or pgrep e.g. `ps aux | grep <name>` or `pgrep <name>`
 2. Using `killall`
    - Terminates the process by its name instead of PID e.g. `killall <name>`
