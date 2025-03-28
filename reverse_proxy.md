@@ -22,5 +22,5 @@ A forward proxy, or just proxy, acts on behalf of the client whereas a reverse p
 
 Typically, all requests from the user's device would go directly to the origin server (D -> F) and responses would come back directly (F -> D). With a reverse proxy, the requests will go to the reverse proxy (D -> E) and then onto the origin server (E -> F). The reverse proxy acts as a middleman between the client and server which handles requests and responses.
 
-__Compared to Forward Proxy__  
+### Compared to Forward Proxy  
 ![forward proxy](./images/forward_proxy_flow.png)
