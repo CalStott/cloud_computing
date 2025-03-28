@@ -17,10 +17,10 @@ A server that sits between client devices, such as web browsers, and a web serve
 A forward proxy, or just proxy, acts on behalf of the client whereas a reverse proxy acts on behalf of the server. A reverse proxy sits in front of an origin server and ensures than no client ever communicates directly with that server. A forward proxy sits in front of a client and ensures that no origin server ever communicates directly with that specific client.
 
 ## How do they work?
-![reverse proxy](images\reverse_proxy_flow.png)
+![reverse proxy](./images/reverse_proxy_flow.png)
 *[Reference](https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/)*
 
 Typically, all requests from the user's device would go directly to the origin server (D -> F) and responses would come back directly (F -> D). With a reverse proxy, the requests will go to the reverse proxy (D -> E) and then onto the origin server (E -> F). The reverse proxy acts as a middleman between the client and server which handles requests and responses.
 
 __Compared to Forward Proxy__  
-![forward proxy](images\forward_proxy_flow.png)
+![forward proxy](./images/forward_proxy_flow.png)
