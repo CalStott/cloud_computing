@@ -12,11 +12,11 @@ sudo apt upgrade -y
 # install nginx
 sudo apt install nginx -y
 
-# reverse proxy config
+# edit nginx config with reverse proxy settings
+sudo sed -i '51c\       proxy_pass http://0.0.0.0:3000;' /etc/nginx/sites-available/default
 
-
-# enable nginx
-sudo systemctl enable nginx
+# restart nginx
+sudo systemctl restart nginx
 
 # get app code - cannot use scp (hint: use github and git)!
 git clone https://github.com/CalStott/sparta-app.git
@@ -34,16 +34,13 @@ cd sparta-app
 cd app
 
 # install dependencies
-npm install
-
-# start the app (starts in foreground by default) - add & to run in background
-npm start app.js &
+sudo npm install
 
 # install pm2 - process manager package for nodejs apps
-# sudo npm install pm2 -g
+sudo npm install pm2 -g
 
 # kill any running node processes that could interfere - idempotency
-# pm2 kill
+pm2 kill
 
 # run the app with pm2 (& = run in background)
-# pm2 start app.js &
+pm2 start app.js &
