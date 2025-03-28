@@ -3,10 +3,10 @@
 # update
 sudo apt update -y
 
-# fix the packagekit daemon error
+# stop the packagekit daemon error
 sudo systemctl stop packagekit
 
-# upgrade (fix the daemon error here)
+# upgrade
 sudo apt upgrade -y
 
 # install nginx
@@ -33,5 +33,14 @@ cd app
 # install dependencies
 npm install
 
-# start the app (starts in foreground by default)
-npm start app.js
+# start the app (starts in foreground by default) - add & to run in background
+npm start app.js &
+
+# install pm2 - process manager package for nodejs apps
+# sudo npm install pm2 -g
+
+# kill any running node processes that could interfere - idempotency
+# pm2 kill
+
+# run the app with pm2 (& = run in background)
+# pm2 start app.js &
