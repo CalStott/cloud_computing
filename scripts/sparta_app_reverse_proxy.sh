@@ -13,7 +13,7 @@ sudo apt upgrade -y
 sudo apt install nginx -y
 
 # edit nginx config with reverse proxy settings
-sudo sed -i '51c\       proxy_pass http://0.0.0.0:3000;' /etc/nginx/sites-available/default
+sudo sed -i '51c\       proxy_pass http://localhost:3000;' /etc/nginx/sites-available/default
 
 # restart nginx
 sudo systemctl restart nginx
