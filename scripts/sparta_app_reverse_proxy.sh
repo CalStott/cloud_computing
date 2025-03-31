@@ -18,6 +18,9 @@ sudo sed -i '51c\       proxy_pass http://localhost:3000;' /etc/nginx/sites-avai
 # restart nginx
 sudo systemctl restart nginx
 
+# enable nginx
+sudo systemctl enable nginx
+
 # get app code - cannot use scp (hint: use github and git)!
 git clone https://github.com/CalStott/sparta-app.git
 
@@ -44,3 +47,6 @@ pm2 kill
 
 # run the app with pm2 (& = run in background)
 pm2 start app.js &
+
+# runs the app after instance is restarted
+sudo pm2 startup
