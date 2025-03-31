@@ -95,6 +95,7 @@ In contrast, with a forward proxy, the flow is different. The client’s request
      ```
    - Save and exit the file:
      - Press `CTRL + X`
+     - Press `Y`
      - Press `Enter`
 
 5. **Re-launch the dependency**
