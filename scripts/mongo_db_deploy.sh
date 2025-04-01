@@ -31,6 +31,7 @@ sudo sed -i '21c\  bindIp: 0.0.0.0' /etc/mongod.conf
 
 # start mongoDB
 sudo systemctl start mongod
+echo "MongoDB started"
 
-# check mongoDB status
-sudo systemctl status mongod
+# enable mongoDB to run on startup
+sudo systemctl enable mongod
