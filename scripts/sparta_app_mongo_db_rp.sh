@@ -51,8 +51,8 @@ sudo npm install pm2 -g
 # kill any running node processes that could interfere - idempotency
 pm2 kill
 
-# run the app with pm2 (& = run in background)
-pm2 start app.js &
+# run the app with pm2
+pm2 start app.js
 
 # runs the app after instance is restarted
 sudo pm2 startup
