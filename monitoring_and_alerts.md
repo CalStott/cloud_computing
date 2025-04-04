@@ -18,7 +18,7 @@ Amazon CloudWatch allows you to monitor AWS resources and applications in real-t
 
     ![Monitoring](./images/instance_monitoring.png)
 
-### 2. Create a CloudWatch Dashbooard
+### 2. Create a CloudWatch Dashboard
 1. Click **Manage detailed monitoring**.
 
     ![Manage detail monitoring](./images/manage_detailed_monitoring.png)
@@ -60,3 +60,6 @@ To receive notifications when certain thresholds are exceeded:
 
 7. Click **Create** in the bottom-right of the page.
 
+## Auto-Scaling Groups (ASG) and Load Balancing (LB)
+
+![ASG](./images/ASG-LB-Caleb.png)
