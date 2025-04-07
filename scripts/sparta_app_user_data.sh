@@ -12,11 +12,13 @@ cd sparta-app
 cd app
 
 # Set DB env variable if needed
+# export DB_HOST=mongodb://<db-ip-address>:27017/posts
 
 # install the dependencies 
 sudo npm install
 
 # Seed database if needed
+# node seeds/seed.js
 
 # kill any running node processes that could interfere - idempotency
 pm2 kill
